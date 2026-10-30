@@ -67,7 +67,7 @@ MAP MEMBER FUNCTION porownaj RETURN NUMBER IS
 wiek NUMBER;
 BEGIN
 wiek := TRUNC(MONTHS_BETWEEN(SYSDATE, SELF.data_produkcji)/12);
-RETURN wiek + SELF.kilometry/1000;
+RETURN wiek + SELF.kilometry/10000;
 END porownaj;
 
 END;

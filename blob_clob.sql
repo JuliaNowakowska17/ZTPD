@@ -138,7 +138,7 @@ DECLARE
 BEGIN
     DBMS_LOB.CREATETEMPORARY(tekst, TRUE);
 
-    FOR i IN 1..1000 LOOP
+    FOR i IN 1..10000 LOOP
     DBMS_LOB.WRITEAPPEND(
             tekst,
             LENGTH('Oto tekst. '),
